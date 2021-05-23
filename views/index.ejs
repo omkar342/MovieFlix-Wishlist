@@ -1,0 +1,27 @@
+<%- include("partials/header")%>
+<% include ("function") %> 
+<% include ("changeColor") %>
+ 
+
+<div class="content">
+    <div>
+        <% movieArray.forEach(function(movie){ %>
+            <div class="column">
+            <div class="movie">
+                <div class="release"><p><%=movie.release_date%></p></div>
+                <img src="<%=imageUrl + movie.backdrop_path%>" alt="<%=movie.title%>">
+                <div class="movie-info">
+                    <h4><%=movie.title.length < 20 ? movie.title : movie.title.substring(0,20) + "..."%></h4>
+                    <span class="like"><i class="fas fa-heart"></i></span>
+                    <span class="<%=getClassByRates(movie.vote_average)%>"><%=movie.vote_average%></span>
+                    <!-- <div class="release"><p><%=movie.release_date%></p></div> -->
+                </div>
+            </div>
+            </div>
+        <% }) %>
+    </div>
+</div>   
+
+   
+
+<%- include("partials/footer")%>

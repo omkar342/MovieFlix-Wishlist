@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://use.fontawesome.com/390a7873a5.js"></script>
+    <script src="https://kit.fontawesome.com/6b49cd0c50.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>MovieFlix</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1> <img src="photos/noun_movie flap_1057519.png" alt=""> MovieFlix</h1>
+        <span style="float: left;">
+        <form action="/" method="POST">
+            <input type="text" placeholder="Search" name="Search" >
+            <button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        </span>
+        <span style="float: left;">
+        <form class="formTrending" action="/trending" method="GET">
+            <button type="submit">🔥 Trending</button>
+        </form>
+        </span>
+        <a class="active">About Us</a>
+        <a href="#news">Wishlist</a> 
+        <a href="#contact">Contact Us</a>
+        <a href="/">Home</a>
+    </div>
